@@ -9,7 +9,7 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'mvn -B -DskipTests clean package'
-                echo 'Hey APIOD'
+                sh 'echo Hey APIOD'
             }
         }
         stage('Test') {
