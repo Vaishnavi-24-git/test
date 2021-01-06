@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Hey APIOD'
+                echo 'APIOD status working'
             }
         }
         
