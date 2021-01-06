@@ -4,7 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                    echo 'APIOD status working'    
-                   echo 'APIOD status working successfully'      
+                   echo 'APIOD status working successfully1'      
             }
         }
         
