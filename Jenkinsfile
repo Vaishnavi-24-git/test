@@ -17,6 +17,6 @@ pipeline {
 def get_first() {
    
         load "./variables.groovy"
-        return "${env.env_var1}"
+        return "${PROJECT}"
     
 }
