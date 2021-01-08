@@ -2,23 +2,21 @@ pipeline {
     agent any
    environment {
       colorPrint='black'
+      test = get_first()
    }
     stages {
         stage('Build') {
             steps {           
                    echo 'APIOD service working successfully'     
-                   echo env.colorPrint
+                   echo env.test
             }
-        }
-       stage('Reading environment variable defined in groovy file') {
-            steps {
-                script {
-                    load "./variables.groovy"
-                    echo "${env.env_var1}"
-                    echo "${env.env_var2}"
-                }
-            }
-        }  
+        }      
         
+    }
+}
+def get_first() {
+    node('master') {
+        load "./variables.groovy"
+        return "${env.env_var1}"
     }
 }
