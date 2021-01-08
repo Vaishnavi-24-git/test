@@ -17,6 +17,7 @@ pipeline {
                    echo env.PROJECT
                    echo env.APP_NAME
                    echo env.CLUSTER
+                   echo env.FE_SVC_NAME
                 
             }
         }      
