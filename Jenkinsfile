@@ -15,8 +15,8 @@ pipeline {
     }
 }
 def get_first() {
-    node('master') {
+   
         load "./variables.groovy"
         return "${env.env_var1}"
-    }
+    
 }
