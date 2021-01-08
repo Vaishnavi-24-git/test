@@ -7,7 +7,7 @@ pipeline {
         stage('Build') {
             steps {           
                    echo 'APIOD service working successfully'     
-                   echo colorPrint
+                   echo env.colorPrint
             }
         }
         
