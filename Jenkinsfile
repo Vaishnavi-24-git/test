@@ -1,7 +1,6 @@
 pipeline {
     agent any
    environment {
-      colorPrint='black'
       PROJECT = get_project()
       APP_NAME = get_appName()
       CLUSTER = get_cluster()
