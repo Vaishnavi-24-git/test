@@ -16,7 +16,7 @@ pipeline {
 }
 def get_first() {
    
-        load "./variables.groovy"
+        load "./sample.txt"
         return "${env.env_var1}"
     
 }
