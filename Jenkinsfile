@@ -1,22 +1,16 @@
-
 pipeline {
-   agent none
+    agent any
    environment {
-       color = 'blue'
+      colorPrint='black'
    }
-   stages {
-       stage('example') {
-            agent { label 'master' }
-            steps {
-               script {
-                   def fields = env.getEnvironment()
-                   fields.each {
-                        key, value -> println("${key} = ${value}");
-                    }
- 
-                    println(env.PATH)
-               }
+    stages {
+        stage('Build') {
+            steps {           
+                   echo 'APIOD service working successfully'     
+                   echo colorPrint
             }
         }
+        
+        
     }
 }
