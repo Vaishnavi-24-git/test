@@ -24,18 +24,18 @@ pipeline {
     }
 }
 def get_project() {
-        load "./variables.groovy"
+        load "./Variables.groovy"
         return "${PROJECT}"   
 }
 def get_appName() {
-        load "./variables.groovy"
+        load "./Variables.groovy"
         return "${APP_NAME}"   
 }
 def get_cluster() {
-        load "./variables.groovy"
+        load "./Variables.groovy"
         return "${CLUSTER}"   
 }
 def get_clusterZone() {
-        load "./variables.groovy"
+        load "./Variables.groovy"
         return "${CLUSTER_ZONE}"   
 }
